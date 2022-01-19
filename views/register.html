@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/register.css">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="/images/logo-mercado-liebre.svg" alt="logo">
+      </header>
+
+    <form action="/register" method="POST">
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido">
+
+         <input type="text" name="user" id="user" placeholder="Nombre de usuari@">
+
+         <label for="fecha" class="title">Fecha de nacimiento</label>
+        <input type="date" name="fecha" id="fecha">
+
+        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio">
+
+        <label for="perfil" class="title">Perfil de usuario</label>
+
+        <div class="perfil">
+            <input type="radio" name="perfil" id="compra" value="compra">
+            <label for="compra">Comprador</label>
+            <input type="radio" name="perfil" id="venta" value="venta">
+            <label for="venta">Vendedor</label>
+        </div>
+
+        <label for="categorias" class="title">Intereses</label>
+
+        <div>
+            <input type="checkbox" name="categorias" id="electro" value="electro">
+            <label for="electro">Electro</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="categorias" id="moda" value="moda">
+            <label for="moda">Moda</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="categorias" id="hogar" value="hogar">
+            <label for="hogar">Hogar</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="categorias" id="juguetería" value="juguetería">
+            <label for="juguetería">Juguetería</label>
+        </div>
+
+        <div>
+            <input type="checkbox" name="categorias" id="vida-sana" value="vida-sana">
+            <label for="vida-sana">Vida sana</label>
+        </div>
+
+
+        <label for="foto" class="title">Foto de Perfil</label>
+        <input type="file" id="foto" name="foto" accept="image/*">
+
+        <input type="password" name="password" id="password" placeholder="Contraseña">
+
+        <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirmanr contraseña">
+        <div class="buttons">
+            <button type="submit"> Enviar </button>
+            <button type="reset"> Borrar </button>
+        </div>
+
+    </form>
+
+    <footer>
+        <div>
+            <article>
+                <i class="fas fa-credit-card fa-2x"></i>
+                <h2>Paga con tarjeta o efectivo</h2>
+                <p>Con Mercado Liebre Cash, tenes cuotas sin interes con tarjeta y en puntos de pago. ¡Y siempre es seguro!
+                </p>
+            </article>
+            <article>
+                <i class="fas fa-gift fa-2x"></i>
+                <h2>Envío Gratis desde $2.500</h2>
+                <p>Solo por estar registrad@ en Mercado Liebre tenes envíos en miles de productos. Es un beneficio de
+                    Mercado
+                    Puntos</p>
+            </article>
+            <article>
+                <i class="fas fa-user-shield fa-2x"></i>
+                <h2>Seguridad de principio a fin</h2>
+                <p>¿No te gusta?¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer, porque estás siempre
+                    protegido.
+                </p>
+            </article>
+        </div>
+        <h2>Copyright © 1999-2020 MercadoLiebre S.R.L.</h2>
+    </footer>
+</body>
+
+</html>

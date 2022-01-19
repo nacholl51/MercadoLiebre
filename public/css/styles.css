@@ -1,228 +1,230 @@
-*{
-    margin: 0px;
-    padding: 0px;    
-    box-sizing: border-box;
-}
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #ebebeb;
-}
 
-h3{
-    font-size: 24px;
-}
-
-p{
+body {
+    margin: 0;
+    font-family: 'Roboto';
     font-size: 12px;
+    width: 100vw;
 }
 
-div.header{
+.precios{
+    font-size: 18px;
+    margin: 0;
+}
+
+.descuentos {
+    font-size: 16px;
+    color: var(--Verde);
+    margin: 0 0 0 10px;
+}
+
+.precios-container {
     display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
-}
-
-header div.header p{
-    width: 100%;
-    text-align: center;
+    align-items: center;
     margin-top: 10px;
 }
 
-header{
-    background-color: #EAC926;
+header {
+    background-color: var(--Amarillo);
+    width: 100vw;
 }
 
-header div.logo,
-header .form{
-    width: 50%;
-}
-
-header div.logo{
-    padding: 10px;
-}
-header .form{
-    display: flex;
-    align-items: center;
+.fa-bars, footer i {
+    color: var(--Celeste);
     padding: 2px;
-    font-size: 11px;
-}
-header nav{
-    font-size: 12px;
-    margin-left: 20px;
+    border-radius: 2px;
 }
 
-header ul li{
-    list-style-type: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    color: #000;
-}
-
-header .form .input{
-    background-color: #FFF;
-    border: 1px solid #000;
-    outline: none;
-    color: #666;
-    padding: 2px;
-}
-
-header .form .submit{
-    background-color: #FFF;
-    border: 1px solid #000;
-    color: #666;
-    width: 10%;
-}
-
-div.burger-menu{
-    text-align: center;
-}
-
-div.burger-menu i{
-    background-color: #0044AA;
-    border-radius: 5px;
-    color: #FFF;
-    font-size: 20px;
-    height: 40px;
-    margin: 10px 0px 20px 0px;
-    padding: 10px;
-    width: 40px;
-}
-
-div.ultimavisita,
-div.offers{
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.price{
-    font-size: 18px;
-    width: 30%;
-}
-
-.discount{
-    width: 70%;
-}
-
-.discount,
-.description{
-    font-size: 16px;
-    font-weight: normal;
-}
-
-h3,
-.description{
-    color: #666;
-}
-
-.description{
-    display: none;
-    margin-top: 20px;
-}
-
-section.banner img{
-    width: 100%;
-}
-
-main{
-    width: 90%;
-    margin: 0 auto;
-}
-
-main section article{
-    background-color: #fff;    
-    margin: 10px 0px;
-}
-
-main section article img{
-    width: 100%;
-}
-
-main section article i,
-.discount{
-    color: #39b54a;
-}
-
-main section article i{
-    display: block;
-    font-size: 16px;
-    padding: 5px;
-    width: 30px;
-    height: 30px;
-    border: 1px solid #39b54a;
-    background-color: #FFF;
-    border-radius: 50%;
-    position: absolute;
-    right: 20px;
-    top: -15px;
-}
-
-main section h3{
-    margin: 20px 0px;
-}
-
-article div.main-article{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    border-top: 1px solid #ebebeb;
+header .search {
     position: relative;
-    padding: 15px;
+    margin-top: 10px;
+    width: 50%;
+    height: 30px;
 }
 
-.footeri{
+.search input{
+    width: 90%;
+    height: 100%;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button {
+    position: absolute;
+    height: 36px;
+    right: 2.5vw;
+    background-color: white;
+    border: solid 1px black;
+}
+:root {
+    --Amarillo: #EAC926;
+    --Azul: #03264C;
+    --Celeste: #1259c3;
+    --Gris-oscuro: #666;
+    --Gris-claro: #ebebeb;
+    --Verde: #39b54a;
+}
+.search button:hover {
+    cursor: pointer;
+}
+
+.descripcion {
+        font-size: 16px;
+    }
+
+.burger-menu{
+    display: flex;
     justify-content: center;
 }
 
-footer {
-  text-align: center;
-
+.banner {
+    width: 100vw;
 }
 
-footer b{
-    font-weight: bold;
-    font-size: 20px;
+main {
+    width: 90vw;
+    overflow: hidden;
+    margin: 0 auto;
 }
-.iconos-footer {
-    color: #1259c3;
-    font-size: 2em;
+
+article {
     margin-bottom: 10px;
+}
+
+article img {
+    width: 100%;
+}
+
+.descripcion {
+    display: none;
+}
+
+main i {
+    background-color: rgba(0,0,0,0);
+    color: var(--Verde);
+    transform: translateX(280px);
+}
+
+
+section article {
+    border-top: solid 1px var(--Gris-claro);
+    margin: 0 20px;
+    min-width: 200px;
+}
+
+footer {
     text-align: center;
-    
-  }
+    background-color: white;
+    padding-top: 20px;
+    width: 100vw;
+}
 
-@media (min-width: 361px){
-    main section article .description{
-        display: block;
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--Azul)
+}
+
+footer i {
+    transition: color .3s ease-out;
+}
+
+footer i:hover {
+    color: black;
+    cursor: pointer;
+}
+
+@media (min-width: 415px){
+
+    body{
+        background-color: var(--Gris-claro);
     }
 
-    main section article{
+    main article {
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        border-radius: 5px;
+        height: 80%;
+        max-width: 300px;
+        margin-bottom: 20px;
+        transition: height 450ms ease-out;
     }
 
-    main section div.products{
+    .descripcion {
+        display: block;
+        font-size: 16px;
+        opacity: 0;
+        transition: opacity 450ms ease-out;
+}
+
+    main article:hover .descripcion {
+        opacity: 1;
+    }
+
+    main article:hover {
+        height: 82%;
+        cursor: pointer;
+    }
+
+    main article .fas {
+        transition: all 450ms ease-out;
+    }
+
+    main article:hover .fas {
+        transform: rotate(-90deg) translateY(280px);
+    }
+
+    .logo {
+        max-width: 200px;
+    }
+    section {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .top, .bottom {
+        margin: auto;
+        width: 80%;
+        display: flex;
         justify-content: space-between;
-        align-items: flex-start;
     }
-    
-    main section div.products article{
-        width: 45%;
+    .bottom ul {
+        display: flex;
     }
 
-    .price,
-    .discount{
-        width: 50%;
+    .bottom ul * {
+        margin-right: 5px;
+    }
+
+    footer div {
+        margin: auto;
+        width: 80%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    footer article {
+        max-width: 300px;
+    }
+
+    .banner{
+        width: 70vw;
+    }
+
+    .banner-container{
+        display: flex;
+        justify-content: center;
     }
 }
 
-@media (min-width: 769px){
-    main section div.products article{
-        width: 22%;
-    }
-}
