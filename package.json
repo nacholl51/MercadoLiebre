@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon app.js"
+    "dev": "app.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,6 @@
     "nodemon": "^2.0.12"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.2"
   }
 }
